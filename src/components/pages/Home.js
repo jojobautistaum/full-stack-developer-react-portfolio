@@ -1,5 +1,6 @@
 import React from 'react';
 import coverImage from '../../assets/images/background-pattern.jpg';
+
 function Home() {
   return (
     <section className="my-5">
