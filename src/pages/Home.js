@@ -1,6 +1,6 @@
 import React from 'react';
-import coverImage from '../../assets/cover/cover-image.jpg';
-function About() {
+import coverImage from '../../assets/images/background-pattern.jpg';
+function Home() {
   return (
     <section className="my-5">
       <h1 id="about">About Me</h1>
@@ -14,4 +14,4 @@ function About() {
   );
 }
 
-export default About;
+export default Home;
