@@ -1,0 +1,42 @@
+import React, { useState } from 'react';
+
+const ProjectList = () => {
+  const [projectList, setprojectList] = useState();
+
+  const [projects] = useState([
+    {
+      name: 'The Tech Blog',
+      image: '../../assets/images/tech-blog.jpg' 
+    },
+    {
+      name: 'Weather Dashboard',
+      image: '../../assets/images/weather-dashboard.jpg' 
+    },
+    {
+      name: 'Password Generator',
+      image: '../../assets/images/password-generator.jpg' 
+    },
+    {
+      name: 'Bible Character Quiz',
+      image: '../../assets/images/bible-character-quiz.jpg' 
+    },
+    {
+      name: 'Word Day Scheduler',
+      image: '../../assets/images/work-day-schedeler.jpg' 
+    },
+    {
+      name: 'Professional README Generator',
+      image: '../../assets/images/professional-readme-generator.jpg' 
+    },
+    {
+      name: 'Readit Light',
+      image: '../../assets/images/readit-light.jpg' 
+    },
+    {
+      name: 'Weather Riders',
+      image: '../../assets/images/weather-riders.jpg' 
+    }
+  ]);
+}
+
+export default ProjectList;
