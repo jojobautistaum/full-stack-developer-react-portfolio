@@ -1,12 +1,13 @@
-import React from 'react';
+import React from "react";
+import Projects from "../Projects";
 
 export default function Portfolio() {
   return (
     <div>
-      <h1>Project List</h1>
-      <p>
-       Temporary Holder for porject list
-      </p>
+      <h3>Project List</h3>
+      {Projects.name.map((project) => (
+        <div>Test</div>
+      ))}
     </div>
   );
 }
