@@ -1,0 +1,51 @@
+import React from "react";
+import Project from "./ProjectList";
+
+const Project = () => {
+  // const [projectList, setprojectList] = useState();
+
+  const [projects] = [
+    {
+      name: "The Tech Blog",
+      image: "../assets/images/projects/tech-blog.jpg",
+    },
+    {
+      name: "Weather Dashboard",
+      image: "../assets/images/projects/weather-dashboard.jpg",
+    },
+    {
+      name: "Password Generator",
+      image: "../assets/images/projects/password-generator.jpg",
+    },
+    {
+      name: "Bible Character Quiz",
+      image: "../assets/images/projects/bible-character-quiz.jpg",
+    },
+    {
+      name: "Word Day Scheduler",
+      image: "../assets/images/projects/work-day-schedeler.jpg",
+    },
+    {
+      name: "Professional README Generator",
+      image: "../assets/images/projects/professional-readme-generator.jpg",
+    },
+    {
+      name: "Readit Light",
+      image: "../assets/images/projects/readit-light.jpg",
+    },
+    {
+      name: "Weather Riders",
+      image: "../assets/images/projects/weather-riders.jpg",
+    },
+  ];
+
+  return (
+    <div className="flex-row">
+      {projects.map((eachProject) => {
+        return <Project project={eachProject} />;
+      })}
+    </div>
+  );
+};
+
+export default Project;

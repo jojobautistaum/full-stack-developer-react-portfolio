@@ -1,13 +1,14 @@
 import React from "react";
-import Projects from "../Projects";
+// import projects from "../Projects";
+import Project from "../Project";
 
 export default function Portfolio() {
+  // const { projects } = props;
   return (
     <div>
-      <h3>Project List</h3>
-      {Projects.name.map((project) => (
-        <div>Test</div>
-      ))}
+      <Project />
+      {/* <h3>{props.name}</h3> */}
+      {/* {projects.map((project) => project.name)} */}
     </div>
   );
 }
