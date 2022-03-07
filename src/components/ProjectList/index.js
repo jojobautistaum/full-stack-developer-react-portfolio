@@ -1,13 +1,13 @@
 import React from "react";
-import Project from "./Project";
-import quiz from "../assets/images/projects/bible-character-quiz.jpg";
-import password from "../assets/images/projects/password-generator.jpg";
-import readme from "../assets/images/projects/professional-readme-generator.jpg";
-import reddit from "../assets/images/projects/reddit-light.jpg";
-import blog from "../assets/images/projects/tech-blog.jpg";
-import weather from "../assets/images/projects/weather-dashboard.jpg";
-import riders from "../assets/images/projects/weather-riders.jpg";
-import scheduler from "../assets/images/projects/work-day-scheduler.jpg";
+import Project from "../Project";
+import quiz from "../../assets/images/projects/bible-character-quiz.jpg";
+import password from "../../assets/images/projects/password-generator.jpg";
+import readme from "../../assets/images/projects/professional-readme-generator.jpg";
+import reddit from "../../assets/images/projects/reddit-light.jpg";
+import blog from "../../assets/images/projects/tech-blog.jpg";
+import weather from "../../assets/images/projects/weather-dashboard.jpg";
+import riders from "../../assets/images/projects/weather-riders.jpg";
+import scheduler from "../../assets/images/projects/work-day-scheduler.jpg";
 
 export default function ProjectList() {
   const projects = [

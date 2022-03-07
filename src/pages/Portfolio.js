@@ -1,8 +1,7 @@
 import React from "react";
 import ProjectList from "../components/ProjectList";
 
-export default function Portfolio(props) {
-  // const { projects } = props;
+function Portfolio() {
   return (
     <div>
       <h3>Portfolio</h3>
@@ -10,3 +9,5 @@ export default function Portfolio(props) {
     </div>
   );
 }
+
+export default Portfolio;
