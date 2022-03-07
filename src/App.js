@@ -28,9 +28,15 @@ export default function App() {
 
   return (
     <div>
-      <div>
-        <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
-      </div>
+      <nav className="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div className="container">
+          <a href="#navheader" className="navbar-brand">
+            Jojo Bautista
+          </a>
+
+          <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
+        </div>
+      </nav>
       <main>{renderPage()}</main>
       <footer>
         <Footer />
