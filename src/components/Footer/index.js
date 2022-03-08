@@ -1,6 +1,16 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import {
+  faLinkedin,
+  faGithub,
+  faHtml5,
+  faCss3,
+  faJs,
+  faReact,
+  faBootstrap,
+  faNodeJs,
+  faNode,
+} from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
   return (
@@ -22,6 +32,13 @@ function Footer() {
         rel="noopener noreferrer"
       >
         <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
+        <FontAwesomeIcon icon={faHtml5}></FontAwesomeIcon>
+        <FontAwesomeIcon icon={faCss3}></FontAwesomeIcon>
+        <FontAwesomeIcon icon={faJs}></FontAwesomeIcon>
+        <FontAwesomeIcon icon={faReact}></FontAwesomeIcon>
+        <FontAwesomeIcon icon={faBootstrap}></FontAwesomeIcon>
+        <FontAwesomeIcon icon={faNodeJs}></FontAwesomeIcon>
+        <FontAwesomeIcon icon={faNode}></FontAwesomeIcon>
         https://www.linkedin.com/in/jojo-bautista
       </a>
     </div>
