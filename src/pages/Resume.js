@@ -6,11 +6,11 @@ export default function Resume() {
       <div className="row">
         <div className="col-12">
           <h2>
-            <i class="fa-solid fa-layer-group"></i> Full Stack Developer
+            <i className="fa-solid fa-layer-group"></i> Full Stack Developer
           </h2>
           <p>Download my resume</p>
         </div>
-        <div className="col-6">
+        <div className="col-5 front-end p-3">
           <h3>Front-end Proficiences</h3>
           <ul className="fa-ul">
             <li>
@@ -63,7 +63,7 @@ export default function Resume() {
             </li>
           </ul>
         </div>
-        <div className="col-6">
+        <div className="col-5 offset-1 back-end p-3">
           <h3>Back-end Proficiences</h3>
           <ul className="fa-ul">
             <li>
