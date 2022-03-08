@@ -5,7 +5,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 const Project = ({ projectData }) => {
   return (
     <div className="col-md-6 col-12 project-container">
-      <div className="project-title-overlay pt-3">
+      <div className="project-title-overlay p-3">
         <h3 className="text-center btn-success project-title">
           {projectData.name}
         </h3>

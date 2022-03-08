@@ -62,7 +62,7 @@ export default function ProjectList() {
   ];
 
   return (
-    <div className="row d-flex">
+    <div className="row d-flex project-list p-3">
       {projects.map((eachProject) => {
         return <Project projectData={eachProject} />;
       })}

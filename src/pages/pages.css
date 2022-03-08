@@ -2,15 +2,9 @@
   background-color: #4DC7AD;
 }
 
-.bg-image {
-  opacity: 1;
-  size: 100%;
-  background-repeat: no-repeat;
-}
-
-.bg-image .about-text {
+/* .bg-image .about-text {
   background:rgba(255,255,255,0.5);
-}
+} */
 
 .project-container {
   position: relative;
@@ -29,10 +23,6 @@
   height: 100%;
 }
 
-.front-end, .back-end {
-  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
-}
-
 .btn-info, .project-title {
   pointer-events: none;
 }
@@ -45,4 +35,43 @@
   opacity: 1;
   pointer-events: all;
   transition: all 500ms;
+}
+
+.front-end, 
+.back-end, 
+.contact-me, 
+.bg-image,
+.project-list,
+.about-text {
+  color: black;
+  font-weight: bold;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(19,190,177,0.6948529411764706) 3%, rgba(0,212,255,1) 100%);
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+/* .front-end, 
+.back-end, 
+.contact-me, 
+.bg-image,
+.project-list,
+.about-text {
+ 
+} */
+
+.project-container {
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.nav-item {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* smaller screen and mobile */
+@media screen and (max-width: 600px) {
+  .nav-item {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
