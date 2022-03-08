@@ -28,7 +28,10 @@ export default function App() {
 
   return (
     <div className="container-fluid">
-      <nav className="navbar navbar-expand-lg bg-dark navbar-dark">
+      <nav
+        className="navbar navbar-expand-lg bg-dark navbar-dark sticky-nav"
+        style={{ position: "sticky" }}
+      >
         <div className="container">
           <a href="#navheader" className="navbar-brand">
             Jojo Bautista

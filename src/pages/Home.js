@@ -8,9 +8,9 @@ function Home() {
     <div>
       <section className="row my-5 container">
         <div className="col-3">
-          <img src={avatar} alt="avatar pic" />
+          <img src={avatar} alt="avatar pic" className="rounded-circle" />
         </div>
-        <div className="col-12">
+        <div className="col-12 py-3">
           <h1 id="about">About Me</h1>
         </div>
         <div
