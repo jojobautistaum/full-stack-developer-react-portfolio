@@ -1,0 +1,13 @@
+#root {
+  background-color: #4DC7AD;
+}
+
+.bg-image {
+  opacity: 1;
+  size: 100%;
+  background-repeat: no-repeat;
+}
+
+.bg-image .about-text {
+  background:rgba(255,255,255,0.5);
+}

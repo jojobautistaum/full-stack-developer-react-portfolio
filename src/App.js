@@ -27,7 +27,7 @@ export default function App() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <div>
+    <div className="container-fluid">
       <nav className="navbar navbar-expand-lg bg-dark navbar-dark">
         <div className="container">
           <a href="#navheader" className="navbar-brand">
@@ -37,7 +37,7 @@ export default function App() {
           <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
         </div>
       </nav>
-      <main>{renderPage()}</main>
+      <main className="container-fluid">{renderPage()}</main>
       <footer>
         <Footer />
       </footer>
