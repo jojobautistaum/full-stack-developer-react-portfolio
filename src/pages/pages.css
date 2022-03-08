@@ -33,6 +33,10 @@
   pointer-events: none;
 }
 
+.project-container {
+  height: 100%;
+}
+
 .project-container:hover > .project-title-overlay {
   opacity: 1;
   pointer-events: all;
