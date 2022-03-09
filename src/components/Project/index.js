@@ -2,23 +2,23 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
+// Display a project image with overlay of project title, github and deployed link
 const Project = ({ projectData }) => {
   return (
-    <div className="col-md-6 col-12 project-container">
-      <div className="project-title-overlay p-3">
+    <div className="col-lg-6 col-12 project-container">
+      <div className="project-title-overlay p-3 text-wrap">
         <h3 className="text-center btn-success project-title">
           {projectData.name}
         </h3>
         <p className="px-3">
-          <span className="btn btn-info font-weight-bolder">App link: </span>{" "}
-          <br />
           <a
-            className="text-decoration-none"
+            className="text-decoration-none app-url"
             href={`${projectData.deployedUrl}`}
             target="_blank"
             rel="noopener noreferrer"
           >
-            {projectData.deployedUrl}
+            <i className="fa-solid fa-plane-departure"></i>{" "}
+            <span className="app-link">{projectData.deployedUrl}</span>
           </a>
         </p>
         <p>
@@ -29,7 +29,7 @@ const Project = ({ projectData }) => {
             rel="noopener noreferrer"
           >
             <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>{" "}
-            {projectData.githubUrl}
+            <span className="github-link">{projectData.githubUrl}</span>
           </a>
         </p>
       </div>

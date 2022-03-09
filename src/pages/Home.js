@@ -2,6 +2,7 @@ import React from "react";
 import avatar from "../assets/images/avatar.jpg";
 import "./pages.css";
 
+// About me Page
 function Home() {
   return (
     <div>

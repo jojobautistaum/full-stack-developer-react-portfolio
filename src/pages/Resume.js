@@ -1,5 +1,7 @@
 import React from "react";
+import resume from "../assets/resume/Resume - Jojo Bautista FSD.pdf";
 
+// Full Stack Developer skills and Resume Page
 export default function Resume() {
   return (
     <div className="container">
@@ -8,7 +10,14 @@ export default function Resume() {
           <h2>
             <i className="fa-solid fa-layer-group"></i> Full Stack Developer
           </h2>
-          <p>Download my resume</p>
+          <p>
+            Download my resume
+            <span>
+              <a href={resume} download="Resume_Jojo_Bautista">
+                <i className="fa fa-download"></i>
+              </a>
+            </span>
+          </p>
         </div>
         <div className="col-md-5 col-10 front-end p-3">
           <h3>Front-end Proficiences</h3>

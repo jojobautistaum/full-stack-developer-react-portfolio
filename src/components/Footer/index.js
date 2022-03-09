@@ -6,6 +6,7 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 
+// Open external email when email address is clicked in the footer
 function Mailto({ email, subject, body, ...props }) {
   return (
     <a href={`mailto:${email}?subject=${subject || ""}&body=${body || ""}`}>
@@ -14,6 +15,7 @@ function Mailto({ email, subject, body, ...props }) {
   );
 }
 
+// footer section
 function Footer() {
   return (
     <div className="footer-dark container text-light small">

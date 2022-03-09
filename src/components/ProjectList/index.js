@@ -1,5 +1,7 @@
 import React from "react";
 import Project from "../Project";
+
+// Import the project images into a variable
 import quiz from "../../assets/images/projects/bible-character-quiz.jpg";
 import password from "../../assets/images/projects/password-generator.jpg";
 import note from "../../assets/images/projects/note-taker.jpg";
@@ -9,6 +11,7 @@ import weather from "../../assets/images/projects/weather-dashboard.jpg";
 import budget from "../../assets/images/projects/personal-budget-tracker.jpg";
 import scheduler from "../../assets/images/projects/work-day-scheduler.jpg";
 
+// List of all the projects
 export default function ProjectList() {
   const projects = [
     {
@@ -61,6 +64,7 @@ export default function ProjectList() {
     },
   ];
 
+  // Render each project in the Portfolio page
   return (
     <div className="row d-flex project-list p-3">
       {projects.map((eachProject) => {

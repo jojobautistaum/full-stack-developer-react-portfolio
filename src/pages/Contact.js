@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Emailjs from "emailjs-com";
 import { validateEmail } from "../utils/helpers";
 
+// Contact Page
 function ContactForm() {
   const [contactName, setContactName] = useState("");
   const [contactEmail, setContactEmail] = useState("");
@@ -9,6 +10,7 @@ function ContactForm() {
 
   const [errMsg, setErrMsg] = useState("");
 
+  // Triggered when there is a change in any of the input element in the form
   const handleChange = (e) => {
     if (e.target.type === "email") {
       const isValid = validateEmail(e.target.value);
@@ -38,6 +40,7 @@ function ContactForm() {
     }
   };
 
+  // Send email to Gmail using emailjs
   function sendEmail(e) {
     e.preventDefault();
 
@@ -53,6 +56,7 @@ function ContactForm() {
       .catch((err) => console.log(err));
   }
 
+  // Contact Page using form
   return (
     <div className="row">
       <h1>Contact me</h1>

@@ -2,10 +2,6 @@
   background-color: #4DC7AD;
 }
 
-/* .bg-image .about-text {
-  background:rgba(255,255,255,0.5);
-} */
-
 .project-container {
   position: relative;
 }
@@ -60,9 +56,19 @@
 }
 
 /* smaller screen and mobile */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .nav-item {
     padding-left: 0px;
     padding-right: 0px;
   }
+
+  .project-title-overlay {
+    font-size: xx-small;
+  }
+
+  .app-link,
+  .github-link {
+    font-size: 0;
+  }
+
 }

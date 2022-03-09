@@ -1,5 +1,7 @@
 import "./App.css";
 import React, { useState } from "react";
+
+// Import components and pages
 import Nav from "./components/Nav";
 import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
@@ -7,6 +9,7 @@ import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
 import Footer from "./components/Footer";
 
+// Main App: contains the header/nav, main section, and footer
 export default function App() {
   const [currentPage, setCurrentPage] = useState("Home");
 
@@ -24,6 +27,7 @@ export default function App() {
     return <Resume />;
   };
 
+  // Set to selected page
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
