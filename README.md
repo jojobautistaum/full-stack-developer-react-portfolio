@@ -46,7 +46,7 @@ My professional portfolio hightlights the projects I've done as Full Stack Devel
 This project is licensed under the MIT license
 
 ## Link <a id="link"></a>
-[Check my portfolio](https://jojobautistaum.github.io/full-stack-developer-react-portfolio/)
+[Check my portfolio](https://full-stack-developer-react.herokuapp.com/)
 
 ## Questions <a id="questions"></a>
 For questions about my work experience or a latest copy of my resume, please reachout to me via email at gjojob@yahoo.com or to my linkedin account https://www.linkedin.com/in/jojo-bautista/
