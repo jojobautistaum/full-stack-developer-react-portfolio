@@ -50,4 +50,3 @@ This project is licensed under the MIT license
 
 ## Questions <a id="questions"></a>
 For questions about my work experience or a latest copy of my resume, please reachout to me via email at gjojob@yahoo.com or to my linkedin account https://www.linkedin.com/in/jojo-bautista/
-
