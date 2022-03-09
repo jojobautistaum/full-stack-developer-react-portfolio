@@ -36,12 +36,11 @@ export default function App() {
           <a href="#navheader" className="navbar-brand">
             Jojo Bautista
           </a>
-
           <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
         </div>
       </nav>
       <main className="container-fluid">{renderPage()}</main>
-      <footer>
+      <footer className="bg-dark">
         <Footer />
       </footer>
     </div>
