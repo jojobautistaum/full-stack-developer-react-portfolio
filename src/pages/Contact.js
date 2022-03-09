@@ -58,58 +58,61 @@ function ContactForm() {
 
   // Contact Page using form
   return (
-    <div className="row">
-      <h1>Contact me</h1>
-      <div className="contact-me col-9 offset-1 py-3 px-5">
-        <form id="contact-form" onSubmit={sendEmail}>
-          <div className="mb-4">
-            <label htmlFor="name" className="form-label">
-              Name
-            </label>
-            <input
-              type="text"
-              name="name"
-              defaultValue={contactName}
-              onBlur={handleChange}
-              className="form-control"
-            />
-          </div>
-
-          <div className="mb-4">
-            <label htmlFor="email" className="form-label">
-              Email Address
-            </label>
-            <input
-              id="email"
-              name="email"
-              type="email"
-              className="form-control"
-              defaultValue={contactEmail}
-              onBlur={handleChange}
-            />
-          </div>
-
-          <div className="mb-4">
-            <label htmlFor="message" className="form-label">
-              Message
-            </label>
-            <textarea
-              name="message"
-              className="form-control"
-              id="message"
-              defaultValue={contactMessage}
-              onBlur={handleChange}
-            />
-          </div>
-          {errMsg && (
-            <div>
-              <p className="error">{errMsg}</p>
+    <div className="container">
+      <div className="row">
+        <h1>Contact me</h1>
+        <div className="contact-me col-10 offset-1 py-3 px-5">
+          <form id="contact-form" onSubmit={sendEmail}>
+            <div className="mb-4">
+              <label htmlFor="name" className="form-label">
+                Name
+              </label>
+              <input
+                type="text"
+                name="name"
+                defaultValue={contactName}
+                onBlur={handleChange}
+                className="form-control"
+              />
             </div>
-          )}
-          <button id="button" type="submit" className="btn btn-success">
-            Submit
-          </button>
-        </form>
+
+            <div className="mb-4">
+              <label htmlFor="email" className="form-label">
+                Email Address
+              </label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                className="form-control"
+                defaultValue={contactEmail}
+                onBlur={handleChange}
+                styles={{ width: "100%" }}
+              />
+            </div>
+
+            <div className="mb-4">
+              <label htmlFor="message" className="form-label">
+                Message
+              </label>
+              <textarea
+                name="message"
+                className="form-control"
+                id="message"
+                defaultValue={contactMessage}
+                onBlur={handleChange}
+              />
+            </div>
+            {errMsg && (
+              <div>
+                <p className="error">{errMsg}</p>
+              </div>
+            )}
+            <button id="button" type="submit" className="btn btn-success">
+              Submit
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   );
