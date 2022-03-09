@@ -1,49 +1,63 @@
 import React, { useState } from "react";
+import Emailjs from "emailjs-com";
 import { validateEmail } from "../utils/helpers";
 
 function ContactForm() {
-  const [contactInfo, setContactInfo] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  const [contactName, setContactName] = useState("");
+  const [contactEmail, setContactEmail] = useState("");
+  const [contactMessage, setContactMessage] = useState("");
 
   const [errMsg, setErrMsg] = useState("");
-  const { name, email, message } = contactInfo;
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (!errMsg) {
-      console.log("Submit Form", contactInfo);
-    }
-  };
 
   const handleChange = (e) => {
-    if (e.target.name === "email") {
+    if (e.target.type === "email") {
       const isValid = validateEmail(e.target.value);
       if (!isValid) {
         setErrMsg("You entered an invalid email. Please check and try again");
       } else {
         setErrMsg("");
+        setContactEmail(e.target.value);
+      }
+    } else if (e.target.type === "text") {
+      if (!e.target.value.length) {
+        setErrMsg(`${e.target.name} is Required!`);
+      } else {
+        setErrMsg("");
+        setContactName(e.target.value);
       }
     } else {
       if (!e.target.value.length) {
         setErrMsg(`${e.target.name} is Required!`);
       } else {
         setErrMsg("");
+        setContactMessage(e.target.value);
       }
     }
     if (!errMsg) {
-      setContactInfo({ ...contactInfo, [e.target.name]: e.target.value });
-      console.log("Handle Form", contactInfo);
+      console.log(e.target.name, ": ", e.target.value);
     }
   };
+
+  function sendEmail(e) {
+    e.preventDefault();
+
+    Emailjs.sendForm(
+      "service_8lqoomg",
+      "template_wwc6uib",
+      e.target,
+      "WhPULFm1WcpBlMfzF"
+    )
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((err) => console.log(err));
+  }
 
   return (
     <div className="row">
       <h1>Contact me</h1>
       <div className="contact-me col-9 offset-1 py-3 px-5">
-        <form id="contact-form" onSubmit={handleSubmit}>
+        <form id="contact-form" onSubmit={sendEmail}>
           <div className="mb-4">
             <label htmlFor="name" className="form-label">
               Name
@@ -51,7 +65,7 @@ function ContactForm() {
             <input
               type="text"
               name="name"
-              defaultValue={name}
+              defaultValue={contactName}
               onBlur={handleChange}
               className="form-control"
             />
@@ -66,7 +80,7 @@ function ContactForm() {
               name="email"
               type="email"
               className="form-control"
-              defaultValue={email}
+              defaultValue={contactEmail}
               onBlur={handleChange}
             />
           </div>
@@ -79,7 +93,7 @@ function ContactForm() {
               name="message"
               className="form-control"
               id="message"
-              defaultValue={message}
+              defaultValue={contactMessage}
               onBlur={handleChange}
             />
           </div>
@@ -88,7 +102,7 @@ function ContactForm() {
               <p className="error">{errMsg}</p>
             </div>
           )}
-          <button id="button" type="submit" className="btn btn-info">
+          <button id="button" type="submit" className="btn btn-success">
             Submit
           </button>
         </form>

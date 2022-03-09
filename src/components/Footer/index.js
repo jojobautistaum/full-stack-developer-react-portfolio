@@ -1,5 +1,4 @@
 import React from "react";
-// import Mailto from "react-mailto";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLinkedin,
