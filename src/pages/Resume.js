@@ -95,9 +95,15 @@ export default function Resume() {
             </li>
             <li>
               <span className="fa-li">
+              <i class="fa-duotone fa-server"></i>
+              </span>
+              Microservices, Config Server, Eureka Server
+            </li>
+            <li>
+              <span className="fa-li">
                 <i className="fa-brands fa-docker"></i>
               </span>
-              Microservices, Containerization
+              Containerization, Docker
             </li>
             <li>
               <span className="fa-li">
