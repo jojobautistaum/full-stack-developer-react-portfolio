@@ -24,6 +24,12 @@ export default function Resume() {
           <ul className="fa-ul">
             <li>
               <span className="fa-li">
+                <i className="fa-brands fa-java"></i>
+              </span>
+              Java
+            </li>
+            <li>
+              <span className="fa-li">
                 <i className="fa-brands fa-html5"></i>
               </span>
               HTML
