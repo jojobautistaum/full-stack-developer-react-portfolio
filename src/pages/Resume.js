@@ -24,12 +24,6 @@ export default function Resume() {
           <ul className="fa-ul">
             <li>
               <span className="fa-li">
-                <i className="fa-brands fa-java"></i>
-              </span>
-              Java
-            </li>
-            <li>
-              <span className="fa-li">
                 <i className="fa-brands fa-html5"></i>
               </span>
               HTML
@@ -83,21 +77,37 @@ export default function Resume() {
           <ul className="fa-ul">
             <li>
               <span className="fa-li">
-                <i className="fa-solid fa-file-code"></i>
+                <i className="fa-brands fa-java"></i>
               </span>
-              APIs
+              Java
+            </li>
+            <li>
+              <span className="fa-li">
+                <i className="fa-brands fa-java"></i>
+              </span>
+              Maven, Spring boot, Spring MVC
+            </li>
+            <li>
+              <span className="fa-li">
+                <i className="fa-brands fa-java"></i>
+              </span>
+              JUnit, MockMvc, Mockito, TDD
+            </li>
+            <li>
+              <span className="fa-li">
+                <i className="fa-brands fa-docker"></i>
+              </span>
+              Microservices, Containerization
             </li>
             <li>
               <span className="fa-li">
                 <i className="fa-brands fa-node-js"></i>
               </span>
-              Node
-            </li>
-            <li>
+              Node.js  
               <span className="fa-li">
                 <i className="fa-brands fa-node"></i>
               </span>
-              Express
+              Express.js
             </li>
             <li>
               <span className="fa-li">
@@ -115,7 +125,7 @@ export default function Resume() {
               <span className="fa-li">
                 <i className="fa-solid fa-code"></i>
               </span>
-              REST
+              REST APIs
             </li>
             <li>
               <span className="fa-li">
