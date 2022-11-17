@@ -103,17 +103,13 @@ export default function Resume() {
               <span className="fa-li">
                 <i className="fa-brands fa-node-js"></i>
               </span>
-              Node.js  
-              <span className="fa-li">
-                <i className="fa-brands fa-node"></i>
-              </span>
-              Express.js
+              Node.js, Express.js  
             </li>
             <li>
               <span className="fa-li">
                 <i className="fa-solid fa-database"></i>
               </span>
-              MySQL, Sequelize, ORM
+              MySQL, Sequelize, ORM, JPA
             </li>
             <li>
               <span className="fa-li">
